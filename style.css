@@ -1,0 +1,74 @@
+/* Resetting default CSS properties on all elements (something I do on my projects) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #152238;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+header nav {
+    margin-left: 40px;
+    border: 1px solid red;
+    display: inline-block;
+}
+header a{
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #152238;
+}
+
+main {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    background-color: pink;
+    border: 1px solid red;
+    width: 70%;
+    padding: 30px;
+}
+
+section h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+aside {
+    background-color: purple;
+    border: 1px solid lime;
+    width: 30%;
+    padding: 0px 30px;
+}
+
+img {
+    width: 80%;
+    padding: 30px;
+}
+
+footer {
+    background-color: green;
+    border: 1px solid yellow;
+    margin: auto;
+    text-align: center;
+}
+footer p a {
+    text-decoration: none;
+    color: #152238;
+}
+footer p a:hover {
+    font-weight: bold;
+}
