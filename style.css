@@ -8,6 +8,7 @@
 body {
     background-color: #152238;
     overflow-x: hidden;
+    color: aliceblue;
 }
 
 header {
@@ -19,7 +20,7 @@ header {
 }
 header nav {
     margin-left: 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: inline-block;
 }
 header a{
@@ -35,35 +36,41 @@ main {
     margin: auto;
 }
 
-section {
-    background-color: pink;
-    border: 1px solid red;
+#main-content {
+    /* background-color: pink;
+    border: 1px solid red; */
     width: 70%;
     padding: 30px;
 }
 
-section h1 {
+#main-content h1 {
     font-size: 2.5em;
     margin-bottom: 15px;
 }
 
-aside {
-    background-color: purple;
-    border: 1px solid lime;
+#side-content {
+    /* background-color: purple;
+    border: 1px solid lime; */
     width: 30%;
-    padding: 0px 30px;
+    padding: 0px  30px;
 }
 
 img {
     width: 80%;
     padding: 30px;
 }
+#img-awards {
+    /* border: 1px solid red; */
+    padding: 10px;
+}
+
 
 footer {
-    background-color: green;
-    border: 1px solid yellow;
+    /* background-color: green; */
+    /* border: 1px solid yellow; */
     margin: auto;
     text-align: center;
+    padding: 50px;
 }
 footer p a {
     text-decoration: none;
@@ -71,4 +78,23 @@ footer p a {
 }
 footer p a:hover {
     font-weight: bold;
+}
+
+
+@media (max-width: 800px) {
+    body {
+        overflow: hidden;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    #main-content, #side-content {
+        width: 90%;
+        margin: auto;
+    }
+    #img-awards {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
